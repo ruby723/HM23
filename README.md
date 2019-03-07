@@ -1,2 +1,0 @@
-# HM23
-HTML5 CLASS
