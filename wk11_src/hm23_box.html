@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm23 : Javascript object</title>
+    <style></style>
+    <script>
+      function fill() {
+        this.amount += 2;
+      }
+      function consume() {
+        this.amount -= 2;
+      }
+
+      var box = new Object();
+      box.color = "red";
+      box.size = 10;
+      box.amount = 0;
+      box.fill = fill;
+      box.consume = consume;
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>Object()로 box객체 만들기</h3>
+    <hr />
+
+    <script>
+      document.write("box: ");
+      document.write(box.color + ", ");
+      document.write(box.size + "<br><hr>");
+
+      box.fill(); //fill()메소드 호출
+      document.write("채우고 난 박스의 양은" + box.amount + "<br>");
+      box.consume(); //consume() 메소드 호출
+      document.write("빼고 난 뒤 박스의 양은" + box.amount + "<br><hr>");
+
+      var user = prompt("깜짝퀴즈!! 박스의 초기 amount값을 예측해보세요", 0);
+
+      if (box.amount == user) {
+        // 정답과 사용자 입력 비교
+        document.write("정답입니다! ");
+        document.body.style.backgroundColor = "skyblue";
+      } else {
+        document.write("틀렸습니다! ");
+        document.body.style.backgroundColor = "red";
+        document.write("답은 <strong>" + box.amount + "</strong>입니다.<br>");
+      }
+    </script>
+  </body>
+</html>

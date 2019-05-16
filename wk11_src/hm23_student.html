@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm23 : Javascript object</title>
+    <style></style>
+    <script>
+      //리터럴 표기법으로 student객체 만들기
+      var student = {
+        // 프로퍼티 생성 및 초기화
+        name: "김정인",
+        id: "20182565",
+        phone: "010 - 0000 - 0819",
+        dislike: "카레",
+        age: 22,
+
+        year: function() {
+          return student.age + 5;
+        }
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>리터럴 표기법으로 student 객체 만들기</h3>
+    <hr />
+
+    <script>
+      document.write("student :  ");
+      document.write(student.name + "<br>    id: ");
+      document.write(student.id + "<br>    phone: ");
+      document.write(student.phone + "<br>    싫어하는것 : ");
+      document.write(student.dislike + "<br>    age: ");
+      document.write(student.age + "<br>");
+
+      student.year();
+      document.write("5년뒤 나이는" + student.year() + "살 입니다.<br>");
+    </script>
+  </body>
+</html>
