@@ -59,6 +59,14 @@ HTML5 CLASS..hm23
    - 날짜 객체 생성
    - String객체
    - new Obfect()와 리터
+   
+- week 12
+   - DOM객체
+   - innerHTML프로퍼티
+   - this 활용
+   - document객체의 프로퍼티
+   - BOM객체
+   - 윈도우 열고 
   
   
   
