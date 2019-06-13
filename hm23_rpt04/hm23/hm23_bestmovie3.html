@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html>
+<head><title>My best movie</title></head>
+<style>
+			div {
+				display: inline-block;
+				height: 35px;
+				width: 200px;
+				border: 1px solid lightgray;
+				text-align: center;
+				color: white;
+				background: black;
+			}
+			#down:hover {
+				position:relative;
+				left:20px ;
+				top:20px ;
+				background:gray ;
+			}
+			#up:hover {
+				position: relative;
+				right: 20px;
+				bottom: 20px;
+				background: gray;
+			}
+		</style>
+		<script>
+            var p;
+            function init(){
+                p=document.getElementById("p");
+                p.onmouseover=over;
+                p.onmouseout=out;
+            }
+            function over(){
+                p.style.backgroundColor="lightpink";
+            }
+            function out(){
+                p.style.backgroundColor="white";
+            }
+    </script>
+
+<body onload="init()">
+ <h1>
+    <p id='p'>MY BEST MOVIE 3</p></h1>
+    <hr>
+	<div id="down"><a href="https://youtu.be/d2VN6NNa9BE" target="_blank">인터스텔라</a></div>
+    <div id="up"><a href="https://youtu.be/LC903LkokMA" target="_blank">인생은 아름다워</a></div>
+	<div id="down"><a href="https://youtu.be/tnyWkyDGWuM" target="_blank">어바웃 타임</a></div>
+    
+
+</body>
+</html>
